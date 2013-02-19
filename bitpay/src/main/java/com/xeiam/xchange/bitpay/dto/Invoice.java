@@ -115,6 +115,14 @@ public class Invoice {
     return currentTime;
   }
 
+  @Override
+  public String toString() {
+
+    return String.format(
+        "Invoice{id='%s', url='%s', posData=%s, status=%s, price=%s, currency='%s', btcPrice=%s, invoiceTime=%s, expirationTime=%s, currentTime=%s}",
+        id, url, posData, status, price, currency, btcPrice, invoiceTime, expirationTime, currentTime);
+  }
+
   /**
    * A BitPay.com invoice can be in one of the following states: “new”, “paid”, “confirmed”, “complete”, “expired” or
    * “invalid”. Payments sent to the bitcoin address associated with an invoice will only be credited to the invoice

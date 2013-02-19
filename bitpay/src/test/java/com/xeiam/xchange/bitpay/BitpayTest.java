@@ -45,7 +45,7 @@ public class BitpayTest {
   @Test
   public void testBitpay() throws Exception {
 
-    Bitpay bitpay = RestProxyFactory.createProxy(Bitpay.class, "https://bitpay.com/");
+    Bitpay bitpay = RestProxyFactory.createProxy(Bitpay.class, "https://bitpay.com");
     BasicAuthCredentials credentials = new BasicAuthCredentials(API_KEY, "");
 
     Invoice invoice = bitpay.createInvoice(credentials, new BigDecimal("12.3"), "EUR");

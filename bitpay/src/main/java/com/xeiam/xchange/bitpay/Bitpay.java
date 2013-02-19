@@ -24,8 +24,12 @@ package com.xeiam.xchange.bitpay;
 
 import java.math.BigDecimal;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 
 import com.xeiam.xchange.bitpay.dto.Invoice;
 import com.xeiam.xchange.bitpay.dto.TransactionSpeed;
@@ -50,8 +54,7 @@ import com.xeiam.xchange.rest.BasicAuthCredentials;
  *
  * @author Matija Mazi
  */
-@Path("/api/")
-@Consumes(MediaType.APPLICATION_JSON)
+@Path("api")
 public interface Bitpay {
 
   // todo: error responses
