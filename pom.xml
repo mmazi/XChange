@@ -81,11 +81,12 @@
 		<module>xchange-bitstamp</module>
 		<module>xchange-campbx</module>
 		<module>xchange-bitcoincharts</module>
+		<module>xchange-bitcoincentral</module>
 		<module>xchange-btcchina</module>
 		<module>xchange-bitcurex</module>
 		<module>xchange-blockchain</module>
     <module>xchange-kraken</module>
-  </modules>
+	</modules>
 
 	<repositories>
 		<repository>
